@@ -47,19 +47,19 @@ public class MethodsOverloadTest {
         MethodsOverload instance = new MethodsOverload();
         assertEquals(0, instance.myOverloadedMethod(parameter));
         assertEquals(1, instance.myOverloadedMethod((Object) parameter));
-        assertEquals(2, instance.myOverloadedMethod(parameter, parameter));
-        assertEquals(3, instance.myOverloadedMethod((Object) parameter, parameter, parameter));
-        assertEquals(3, instance.myOverloadedMethod(new Object(), parameter, parameter));
-        assertEquals(6, instance.myOverloadedMethod(new Object(), 2, 3));
+//        assertEquals(2, instance.myOverloadedMethod(parameter, parameter));
+//        assertEquals(3, instance.myOverloadedMethod((Object) parameter, parameter, parameter));
+//        assertEquals(3, instance.myOverloadedMethod(new Object(), parameter, parameter));
+//        assertEquals(6, instance.myOverloadedMethod(new Object(), 2, 3));
         assertEquals(3, instance.myOverloadedMethod(new Object(), new Integer[]{}));
         assertEquals(4, instance.myOverloadedMethod(parameter, (Object) parameter));
         assertEquals(5, instance.myOverloadedMethod(new int[]{1, 3}));
         assertEquals(2, instance.myOverloadedMethod(new Integer[]{1, 3}));
         assertEquals(5, instance.myOverloadedMethod(new int[]{}));
         assertEquals(2, instance.myOverloadedMethod(new Integer[]{}));
-        assertEquals(5, instance.myOverloadedMethod(1, 3));
+//        assertEquals(5, instance.myOverloadedMethod(1, 3));
         assertEquals(7, instance.myOverloadedMethod(1));
-        assertEquals(7, instance.myOverloadedMethod());
+//        assertEquals(7, instance.myOverloadedMethod());
     }
 
    

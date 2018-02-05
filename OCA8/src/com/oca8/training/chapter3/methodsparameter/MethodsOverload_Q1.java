@@ -17,9 +17,13 @@ public class MethodsOverload_Q1 {
     
     public static void main(String[] argv) {
         Integer parameter = 1;
-        System.out.print(new MethodsOverload().myOverloadedMethod(parameter));
-        System.out.print(new MethodsOverload().myOverloadedMethod(1));
+        System.out.print(new MethodsOverload_Q1().myOverloadedMethod(parameter));
+        System.out.print(new MethodsOverload_Q1().myOverloadedMethod(1));
     }
+
+    
+    
+    
 
     public int myOverloadedMethod(Integer parameter) { return 0;}
 
