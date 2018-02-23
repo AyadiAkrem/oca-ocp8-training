@@ -16,12 +16,14 @@ import java.util.Arrays;
 public class PeriodExemplified {
 
     public static void main(String[] str) {
-        Period[] durations = {Period.ofDays(30),
-            Period.ofMonths(12),
+        Period[] durations = {Period.ofDays(35),
+            Period.ofDays(-35),
+            Period.ofMonths(14),
             Period.ofWeeks(11),
             Period.ofYears(50),
             Period.between(LocalDate.of(2012, 11, 11), LocalDate.of(2013, 1, 1))};
         System.out.println(Arrays.asList(durations));
-        //[P30D, P12M, P77D, P50Y, P1M21D]
+        //[P35D, P-35D, P14M, P77D, P50Y, P1M21D]
+
     }
 }

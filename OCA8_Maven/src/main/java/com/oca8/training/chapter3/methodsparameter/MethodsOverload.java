@@ -14,7 +14,11 @@ package com.oca8.training.chapter3.methodsparameter;
  * @author AYADI Akrem
  */
 public class MethodsOverload {
-
+     public static void main(String[] str){
+         MethodsOverload mo = new MethodsOverload();
+         Integer  x = 3 ;
+            if(x == 3) return;
+        }
     /**
      * Tacking an Integer as parameter
      *
@@ -25,7 +29,7 @@ public class MethodsOverload {
         return 0;
     }
 
-    public int myOverloadedMethod(Object parameter) {
+    public int myOverloadedMethod(Number... parameter) {
         return 1;
     }
 
@@ -41,9 +45,7 @@ public class MethodsOverload {
         return 4;
     }
 
-    public int myOverloadedMethod(int... parameters) {
-        return 5;
-    }
+
 
     public int myOverloadedMethod(Object parameter, int... parameters) {
         return 6;
@@ -52,5 +54,10 @@ public class MethodsOverload {
     public int myOverloadedMethod(int parameter) {
         return 7;
     }
+
+    public int myOverloadedMethod() {
+        return 8;
+    }
+
 
 }

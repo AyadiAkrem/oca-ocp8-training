@@ -23,7 +23,7 @@ public class ShiftingLocalTime {
         localTime.plus(3, ChronoUnit.HOURS); //14:20:50
         localTime.plus(Duration.ofDays(3)); //11:20:50
         try {
-            localTime.plus(Period.ofDays(3));
+            localTime.plus(Period.ofDays(3));//UnsupportedTemporalTypeException
         } catch (UnsupportedTemporalTypeException e) {
             e.printStackTrace();
         }
